@@ -1,6 +1,6 @@
-# NEVE by VRCVS
+# N3VE by VRCVS
 
-**A generative ambient panel for [Plinky 12](https://plinky12.com)** (designed for the Chords faceplate), ported from NEVE, the norns script by VRCVS.
+**A generative ambient panel for [Plinky 12](https://plinky12.com)** (designed for the Chords faceplate), ported from N3VE, the norns script by VRCVS.
 
 Snow falls in the sky and plays low notes when it lands. The tears answer with a melody. A third voice is yours, on a keyboard that always fits the chord: play a phrase and the tears reply. Chords change at the end of the bar, so you always stay in time.
 
@@ -20,15 +20,15 @@ Snow falls in the sky and plays low notes when it lands. The tears answer with a
 ## Install
 
 1. Open the [Plinky 12 Code Editor](https://plinky12.com/ide.html) in Chrome.
-2. Start a blank panel and paste the contents of [`src/neve.cpp`](src/neve.cpp).
+2. Start a blank panel and paste the contents of [`src/n3ve.cpp`](src/n3ve.cpp).
 3. Select **Chords** as the faceplate, press **Test** to try it in the emulator (hold ▶ for a moment to start).
 4. Connect your Plinky 12 via USB and press **Flash**. Panels open in other IDE tabs are flashed together.
-5. Power on holding the bottom-row pad shown for NEVE in the IDE diagram.
+5. Power on holding the bottom-row pad shown for N3VE in the IDE diagram.
 
 ## Manual
 
-- English: [`docs/NEVE_manual_EN.pdf`](docs/NEVE_manual_EN.pdf)
-- Italiano: [`docs/NEVE_manuale_IT.pdf`](docs/NEVE_manuale_IT.pdf)
+- English: [`docs/N3VE_manual_EN.pdf`](docs/N3VE_manual_EN.pdf)
+- Italiano: [`docs/N3VE_manuale_IT.pdf`](docs/N3VE_manuale_IT.pdf)
 
 ## Notes
 
@@ -39,7 +39,7 @@ Snow falls in the sky and plays low notes when it lands. The tears answer with a
 
 - Port of **[NEVE](https://github.com/vrcvs/NEVE)**, the norns script by VRCVS (MIT).
 - **Plinky 12** by mmalex and Making Sound Machines.
-- NEVE by **VRCVS** (Filippo Rieder) – Instagram [@vrcvs](https://www.instagram.com/vrcvs). Written with the help of Claude (Anthropic).
+- N3VE by **VRCVS** (Filippo Rieder) – Instagram [@vrcvs](https://www.instagram.com/vrcvs). Written with the help of Claude (Anthropic).
 
 ## License
 
@@ -49,4 +49,4 @@ Snow falls in the sky and plays low notes when it lands. The tears answer with a
 
 ### In italiano
 
-NEVE è un pannello custom generativo per Plinky 12, porting dello script norns NEVE: la neve cade e suona note basse quando tocca terra, le lacrime rispondono con una melodia, e la terza voce la suoni tu su una tastiera sempre nell'accordo. Installazione: incolla `src/neve.cpp` nel Code Editor di plinky12.com, prova con **Test**, poi **Flash**. Manuale completo in [`docs/NEVE_manuale_IT.pdf`](docs/NEVE_manuale_IT.pdf).
+N3VE è un pannello custom generativo per Plinky 12, porting dello script norns NEVE: la neve cade e suona note basse quando tocca terra, le lacrime rispondono con una melodia, e la terza voce la suoni tu su una tastiera sempre nell'accordo. Installazione: incolla `src/n3ve.cpp` nel Code Editor di plinky12.com, prova con **Test**, poi **Flash**. Manuale completo in [`docs/N3VE_manuale_IT.pdf`](docs/N3VE_manuale_IT.pdf).

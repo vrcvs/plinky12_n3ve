@@ -1,18 +1,18 @@
 /*
-@Name: NEVE
+@Name: N3VE
 @Author: VRCVS (Filippo Rieder)
 @Description: Generative ambient instrument for the Chords faceplate, ported from the norns script NEVE. Snow falls in the
   sky and plays low notes when it lands, tears answer with a melody, and a third voice is yours on a keyboard that
   always fits the chord. Tap the sky to drop flakes, choose chords on the top row, play phrases and the tears reply.
-@Documentation: https://github.com/vrcvs/plinky12_neve
-@Discussion: https://github.com/vrcvs/plinky12_neve/issues
+@Documentation: https://github.com/vrcvs/plinky12_n3ve
+@Discussion: https://github.com/vrcvs/plinky12_n3ve/issues
 @Tags: generative, ambient, harmony, midi, norns
 @Preferred Panels: chords
 @Category: generative
 
 Version 0.2 (beta)
-NEVE by VRCVS - https://www.instagram.com/vrcvs/
-Manual (IT/EN): see the NEVE PDFs at https://github.com/vrcvs/plinky12_neve
+N3VE by VRCVS - https://www.instagram.com/vrcvs/
+Manual (IT/EN): see the N3VE PDFs at https://github.com/vrcvs/plinky12_n3ve
 
 CREDITS
   Port of NEVE, the norns script by VRCVS (https://github.com/vrcvs/NEVE, MIT).
@@ -56,7 +56,7 @@ QUICK REFERENCE (Chords panel; rows/columns counted from 0, top-left)
   PARAM       sliders: frequency, melodic variation, rhythmic variation, velocity min, velocity max, note length
   Right side button down: save/load (settings, the three sounds and the mix).
 */
-#define PANEL_PAD_COLOR WHITE // colour of NEVE in the panel picker
+#define PANEL_PAD_COLOR WHITE // colour of N3VE in the panel picker
 
 static constexpr int NSCALES = 12;
 static const scale_t k_scales[NSCALES] = {
@@ -96,7 +96,7 @@ static inline int nv_clamp(int v, int lo, int hi) { return v < lo ? lo : (v > hi
 static inline int nv_mod(int a, int n) { int r = a % n; return r < 0 ? r + n : r; }
 static inline float nv_rand(void) { return (float)(rand() & 0xffff) / 65536.f; }
 
-struct neve : panel_t {
+struct n3ve : panel_t {
   enum { SNOW = 0, TEARS = 1, LIVE = 2, NV = 3 };
   enum { KW = 16, KH = 6, KPADS = KW * KH, KY0 = 8 }; // live keyboard: rows 8-13
   enum { SKY0 = 2, SKY1 = 7 };                        // sky: rows 2-7
@@ -858,7 +858,7 @@ struct neve : panel_t {
   // =========================================================
   void on_setup_default_panel_state() override {
     panel_t::on_setup_default_panel_state();
-    printf("NEVE by VRCVS v0.1\n");
+    printf("N3VE by VRCVS v0.2\n");
     scale_idx = 0; root_pc = 2; live_oct = 3; snow_oct = 3; tears_oct = 3; // D dorian, like NEVE on norns
     style = 0; arp_dir = 2; prog = 0;
     quant_idx = 1; harm_idx = 2; density_idx = 3; wind = 4;
@@ -1377,7 +1377,7 @@ struct neve : panel_t {
 
   bool on_serialise(serialiser_t &s, int version) override {
     (void)version;
-    neve &o = *this;
+    n3ve &o = *this;
     (void)o;
     OBJECT_BEGIN(s);
     FIELD_SYNTH_PRESET("sound_snow", 0);
@@ -1462,4 +1462,4 @@ struct neve : panel_t {
   }
 };
 
-static_assert(sizeof(neve) <= 128 * 1024, "NEVE is larger than the 128 KB panel arena");
+static_assert(sizeof(n3ve) <= 128 * 1024, "N3VE is larger than the 128 KB panel arena");
