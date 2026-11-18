@@ -1,6 +1,6 @@
 # N3VE by VRCVS
 
-**A generative ambient panel for [Plinky 12](https://plinky12.com)** (designed for the Chords faceplate), ported from N3VE, the norns script by VRCVS.
+**A generative ambient panel for [Plinky 12](https://plinky12.com)** (designed for the Chords faceplate), ported from [NEVE](https://github.com/vrcvs/NEVE), the norns script by VRCVS.
 
 Snow falls in the sky and plays low notes when it lands. The tears answer with a melody. A third voice is yours, on a keyboard that always fits the chord: play a phrase and the tears reply. Chords change at the end of the bar, so you always stay in time.
 
