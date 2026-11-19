@@ -1,8 +1,7 @@
 # Changelog
 
 ## 0.2 (beta) – November 2026
-- Up to 3 of your own multisample banks at once: auditioning in the SD browser happens on the voice's own slot when it already has one of your banks, so it never needs memory for an extra bank; ✖ puts the old sound back
-- The song remembers which SD bank each voice uses
+- Up to 3 of your own multisample banks at once. PRE opens Plinky's system picker, which lists your own banks in PLINKY/BANKS and previews on the selected voice itself, so auditioning never needs memory for an extra bank (the separate SD browser of 0.1 is gone)
 - Song page: N3VE creates its song folder on the SD card the first time the page opens; before, on a card where it had never saved, the OK pad stayed dark and nothing could be saved
 - Loading a saved song now sets up the playback state, so the cell melody starts as expected (fix by the Plinky team, mmalex)
 - Manuals: section 11 explains the 14 MB sample memory and the Bank Builder "Banks loaded together: 3" option
